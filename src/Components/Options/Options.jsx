@@ -1,12 +1,17 @@
-// import css from './Options.modal.css';
+import css from './Options.module.css';
 
 const Options = () => {
   return (
-    <div>
-      <button type="button">Good</button>
-      <button type="button">Neutral</button>
-      <button type="button">Bad</button>
-      <button type="button">Reset</button>
+    <div className={css.buttonsContainer}>
+      <button className={css.btn} type="button">
+        Good
+      </button>
+      <button className={css.btn} type="button">
+        Neutral
+      </button>
+      <button className={css.btn} type="button">
+        Bad
+      </button>
     </div>
   );
 };
